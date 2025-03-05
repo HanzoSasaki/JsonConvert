@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Dados para JSON</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div id="gradient"></div>
+
+    <header>
+        Conversor de Dados para JSON
+    </header>
+    
+
+    <div class="aviso">
+        Esse site transforma qualquer planilha em JSON. Use com cuidado.
+    </div>
+    
+
+    
+    <div class="container">
+      
+        <textarea id="inputData" placeholder="Cole os dados aqui (tabela ou texto com dados separados por tabulação)"></textarea><br>
+        <button onclick="convertToJSON()">Converter para JSON</button>
+        <button onclick="copyToClipboard()">Copiar JSON</button>
+        <div id="output" class="output"></div>
+        <div id="copyMessage" class="copy-message"></div>
+    </div>
+
+
+    <footer>
+        Todos os direitos reservados - Erick Barbosa
+    </footer>
+ <script src="script.js"></script>
+
+</body>
+</html>

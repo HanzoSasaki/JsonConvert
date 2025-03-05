@@ -1,0 +1,146 @@
+/* Configuração do container de gradiente */
+#gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Para garantir que o gradiente fique no fundo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Para empilhar o conteúdo verticalmente */
+}
+
+/* Estilo do Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(162, 194, 232, 0.7); /* Gradiente com opacidade */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do Aviso */
+/* Estilização do aviso */
+.aviso {
+    background-color: rgba(255, 255, 0, 0.2); /* Fundo com opacidade amarela */
+    color: #f1c40f; /* Cor do texto amarela */
+    font-size: 18px;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #f1c40f; /* Borda neon amarela */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.6); /* Efeito de neon na borda */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aviso::before {
+    content: "⚠️ "; /* Emoticon de alerta antes do texto */
+    font-size: 28px; /* Tamanho maior para o emoticon */
+    margin-right: 10px; /* Espaçamento entre o emoticon e o texto */
+}
+
+
+/* Estilo do Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(162, 194, 232, 0.7); /* Gradiente com opacidade */
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do conteúdo principal */
+.container {
+    width: 70%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1; /* Para garantir que o conteúdo fique acima do gradiente */
+    margin-top: 50px; /* Para garantir que o conteúdo não sobreponha o header fixo */
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+    resize: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Área de resultado */
+.output {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    color: #333;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Estilo de mensagem de cópia */
+.copy-message {
+    font-size: 12px;
+    color: #4CAF50;
+    margin-top: 10px;
+}
